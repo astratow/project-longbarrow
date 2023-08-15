@@ -3,27 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <title>Longbarrow Allotments Website</title>
+    <style>
+        .hero-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+/*            align-items: flex-end;*/
+            justify-content: flex-end;
+            padding: 60px;
+        }
+
+        .nav-links {
+            display: flex;
+        }
+
+        .nav-links ul {
+            display: flex;
+            gap: 5px;
+
+        }
+
+        .nav-links ul li {
+            list-style-type: none;
+
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #eeba0bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a.hero-cta-button {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #eeba0bff;
+            background-color: #710000ff;
+            border-radius: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: 3px solid transparent;
+        }
+
+        a.hero-cta-button:hover {
+            text-decoration: none;
+            border: 3px solid #eeba0bff;
+        }
+
+        img.logo {
+            width: 50px;
+        }
+
+    </style>
 </head>
 <body>
 
     <!-- Navigation -->
     <nav class="nav-links">
-        
-            <ul>
-                <li class="link-item"><a href="./html/mission.html">Our Mission</a></li>|
-                <li class="link-item"><a href="./html/events.html">Events</a></li>|
-                <li class="link-item"><a href="./html/rules.html">Rules</a></li>|
-                <li class="link-item"><a href="./html/history.html">Our History</a></li>|
-                <li class="link-item"><a href="./html/about.html">About Us</a></li>|
-                <li class="link-item"><a href="./html/contact.html">Contact Us</a></li>|
-                <li class="link-item"><a href="www.facebook.com">Social</a></li>|
-                <li class="link-item"><a href="www.twitter.com">Social</a></li>
-            </ul>
+        <img class="logo" src="./assets/logo.jpeg" alt="logo">    
+        <ul>
+            <li class="link-item"><a href="./html/mission.html">Our Mission</a></li>|
+            <li class="link-item"><a href="./html/events.html">Events</a></li>|
+            <li class="link-item"><a href="./html/rules.html">Rules</a></li>|
+            <li class="link-item"><a href="./html/history.html">Our History</a></li>|
+            <li class="link-item"><a href="./html/about.html">About Us</a></li>|
+            <li class="link-item"><a href="./html/contact.html">Contact Us</a></li>|
+            <li class="link-item"><a href="www.facebook.com">Social</a></li>|
+            <li class="link-item"><a href="www.twitter.com">Social</a></li>
+        </ul>
         
 
     </nav>
     
-    <div class="hero">Hero section</div>
+    <div class="hero">
+        <div class="hero-container" style="background-image: url('https://images.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg');">
+        <h1 class="hero-text">Welcome to Longbarrow Allotments</h1>
+        <a class="hero-cta-button" href="./html/apply.html">Apply</a>
+    </div>
+
+    </div>
 
     <div class="our-mission">Our Mission</div>
     

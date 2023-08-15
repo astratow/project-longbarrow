@@ -40,20 +40,27 @@
 			display: flex;
 			flex-direction: column;
 			gap: 14px;
-			background-color:  lightyellow;
+			font-size: 26px;
+			font-family: "Charter", sans-serif;
+			background-color:  #f4e409ff;
+			color: #a63c06ff;
 			padding: 20px;
 			border: none;
 			border-radius: 26px;
+			width: 40%;
+			margin: 0 auto;
 		}
 
 		label {
-			margin-bottom: 10px 0;
+/*			margin-bottom: 10px;*/
 		}
 
 
 		input {
-			background-color: yellow;
-			border-color: yellowgreen;
+			background-color: #eeba0bff;
+			border-color: #c36f09ff;
+			border-radius: 20px;
+			padding: 5px;
 		}
 
 		.application-form__row {
@@ -67,8 +74,8 @@
 			justify-content: center;
 			font-size: 16px;
 			font-weight: 700;
-			color: green;
-			background-color: yellow;
+			color: #eeba0bff;
+			background-color: #710000ff;
 			border:none;
 			border-radius: 12px;
 			width: 100%;
@@ -78,9 +85,9 @@
 		}
 
 		button:hover {
-			background-color:green;
+			background-color: #eeba0bff;
 
-			color: yellow;
+			color: #710000ff;
 			box-shadow: black;
 		}
 	</style>
@@ -96,7 +103,8 @@
 	<form id="allotmentApplicationForm" class="application-form">
 		<div class="application-form__row">
 		  <label for="fullName">I</label>
-		  <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+		  <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+		  <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
 		</div>
 		<div class="application-form__row">
 		  <label for="address">of</label>
