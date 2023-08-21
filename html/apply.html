@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		h2.application-header {
+			font-family: "times new roman", serif;
+			font-weight: 500;
+			font-size: 32px;
+			text-transform: uppercase;
+			text-decoration: underline;
+		}
+
+		.address-box {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-transform: uppercase;
+			text-align: center;
+			border: 2px solid black;
+			width: 70%;
+			margin: 40px auto;
+			padding: 30px;
+		}
+
+		h3.address-box__title {
+			font-size: 32px;
+			font-weight: 500;
+			margin: 20px;
+		}
+
+		h3.address-box__subtitle {
+			font-size: 16px;
+			font-weight: 700;
+			margin: 10px;
+		}
+
+		form.application-form {
+			display: flex;
+			flex-direction: column;
+			gap: 14px;
+			font-size: 26px;
+			font-family: "Charter", sans-serif;
+			background-color:  #f4e409ff;
+			color: #a63c06ff;
+			padding: 20px;
+			border: none;
+			border-radius: 26px;
+			width: 40%;
+			margin: 0 auto;
+		}
+
+		label {
+/*			margin-bottom: 10px;*/
+		}
+
+
+		input {
+			background-color: #eeba0bff;
+			border-color: #c36f09ff;
+			border-radius: 20px;
+			padding: 5px;
+		}
+
+		.application-form__row {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+
+		button {
+			display: flex;
+			justify-content: center;
+			font-size: 16px;
+			font-weight: 700;
+			color: #eeba0bff;
+			background-color: #710000ff;
+			border:none;
+			border-radius: 12px;
+			width: 100%;
+			padding: 8px;
+			transition: all .9s ease;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: #eeba0bff;
+
+			color: #710000ff;
+			box-shadow: black;
+		}
+	</style>
+	<title>Application</title>
+</head>
+<body>
+	<h2 class="application-header">Application for tenancy</h2>
+	<div class="address-box">
+		<h3 class="address-box__title">Longbarrow Allotments Association</h2>
+		<h3 class="address-box__subtitle">GARDENS AND SOCIAL CLUB ESTABLISHED 1951</h3>
+		<h3 class="address-box__subtitle">THROOP ROAD<br>BOURNEMOUTH<br>BH8 0DJ</h3>
+	</div>
+	<form id="allotmentApplicationForm" class="application-form">
+		<div class="application-form__row">
+		  <label for="fullName">I</label>
+		  <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+		  <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+		</div>
+		<div class="application-form__row">
+		  <label for="address">of</label>
+		  <input type="text" name="building" placeholder="Home/Flat Number" required>
+		  <input type="text" name="street" placeholder="Street Name" required>
+		  <input type="text" name="town" placeholder="Town" required>
+		</div>
+		<div class="application-form__row">
+		  <label for="postCode">Post Code</label>
+		  <input type="text" id="postCode" name="postCode" placeholder="Postcode" required>
+		</div>
+		<div class="application-form__row">
+		  <label for="telephone">Telephone number</label>
+		  <input type="tel" id="telephone" name="telephone" placeholder="Phone Number" required>
+		</div>
+		<div class="application-form__row">
+		  <label for="email">Email</label>
+		  <input type="email" id="email" name="email" placeholder="Email Address" required>
+		</div>
+		<div class="application-form__row">
+		  <p>Hereby apply for an allotment at the Longbarrow Allotments. If this application is accepted, I agree to abide by the Rules and Conditions of Tenancy in force at the time.</p>
+		</div>
+		<div class="application-form__row">
+	  		<label for="signature">Signed</label>
+	  		<input type="text" id="signature" name="signature" placeholder="Signature" required>
+		</div>
+		<div class="application-form__row">
+		  <label for="date">Date</label>
+		  <input type="date" id="date" name="date" required>
+		</div>
+		<div class="application-form__row">
+		  <button type="submit">Submit Application</button>
+		</div>
+	</form>
+
+	
+</body>
+</html>
