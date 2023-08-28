@@ -132,6 +132,9 @@
 			color: #710000ff;
 			box-shadow: black;
 		}
+		.hidden {
+			display: none;
+		}
 	</style>
 	<title>Application</title>
 </head>
@@ -187,8 +190,8 @@
 		  <input type="email" id="email" name="email" placeholder="Email Address" required>
 		</div>
 		<div class="application-form__row">
-		  <p><label>Declaration</label>
-		  <input type="textarea" name="declaration" value="I hereby apply for an allotment at the Longbarrow Allotments. If this application is accepted, I agree to abide by the Rules and Conditions of Tenancy in force at the time.">
+		  <p><label>I hereby apply for an allotment at the Longbarrow Allotments. If this application is accepted, I agree to abide by the Rules and Conditions of Tenancy in force at the time.</label>
+		  <input type="text" class="hidden" name="declaration" value="I hereby apply for an allotment at the Longbarrow Allotments. If this application is accepted, I agree to abide by the Rules and Conditions of Tenancy in force at the time.">
 		  </p>
 
 		</div>
