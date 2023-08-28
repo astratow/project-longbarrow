@@ -1,0 +1,85 @@
+/* CTA button */
+        a.hero-cta-button {
+            position: relative;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: rgb(240, 255, 66);
+            background-color: rgb(55, 146, 55);
+            border-radius: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: 3px solid transparent;
+            overflow: hidden;
+        }
+
+        a.hero-cta-button::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -50%;
+          width: 120%; /* Adjust the width to make the element smaller */
+          height: 100%;
+          background: linear-gradient(to right, rgba(255, 255, 255, 0.4), transparent);
+          filter: blur(13px); /* Apply a slight blur to the gradient */
+          animation: shinyEffect 3s linear infinite;
+        }
+
+        @keyframes shinyEffect {
+          0%{
+            transform: translateX(100%);
+          }
+          100%{
+            transform: translateX(-100%);
+          }
+        }
+        
+
+        a.hero-cta-button:hover {
+            text-decoration: none;
+            border: 3px solid rgb(240, 255, 66);
+        }
+/* CTA Button end */
+
+        /* nabar */
+
+        
+        .nav-links {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            background-color: #009476;
+            padding: 10px;
+            z-index: 9;
+        }
+
+        .nav-links ul {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+        }
+
+        .nav-links ul li {
+            list-style-type: none;
+
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #eeba0bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .nav-cta {
+            display: flex;
+            align-items: center;
+        }
+
+        img.logo {
+            width: 100px;
+        }
+        /*hero section*/

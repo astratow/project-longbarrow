@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
     <title>Longbarrow Allotments Website</title>
     <style>
         /* nabar */
@@ -11,7 +12,7 @@
             position: relative;
             display: flex;
             justify-content: space-between;
-            background-color: rgb(240, 255, 66);
+            background-color: #009476;
             padding: 10px;
             z-index: 9;
         }
@@ -31,26 +32,27 @@
         a {
             text-decoration: none;
             font-weight: bold;
-            color: rgb(55, 146, 55);
+            color: #eeba0bff;
         }
 
         a:hover {
             text-decoration: underline;
         }
 
-    
+    .nav-cta {
+        display: flex;
+        align-items: center;
+    }
 
         img.logo {
             width: 100px;
         }
-
         /*hero section*/
         .hero-container {
             display: flex;
             flex-direction: column;
             align-items: flex-end;
             height: 100vh;
-/*            align-items: flex-end;*/
             justify-content: flex-end;
             margin-top: -97px ;
             padding: 60px;
@@ -62,7 +64,7 @@
             flex-direction: column;
             align-items: center;
         }
-
+/* CTA button */
         a.hero-cta-button {
             position: relative;
             text-transform: uppercase;
@@ -102,7 +104,7 @@
             text-decoration: none;
             border: 3px solid rgb(240, 255, 66);
         }
-
+/* CTA Button end */
         h1.hero-text__headline{
             color: rgb(240, 255, 66);
         }
@@ -117,6 +119,7 @@
         <a href="./index.html">
         <img class="logo" src="./assets/logo-nobg2.png" alt="logo">    
     </a>
+
         <ul>
             <li class="link-item"><a href="./html/mission.html">Our Mission</a></li>|
             <li class="link-item"><a href="./html/events.html">Events</a></li>|
@@ -128,7 +131,9 @@
             <li class="link-item"><a href="www.twitter.com">Social</a></li> -->
         </ul>
         
-
+<div class="nav-cta">
+    <a class="hero-cta-button" href="./html/apply.html">Apply</a>
+</div>
     </nav>
     
     <div class="hero">
