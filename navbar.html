@@ -2,67 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
     <title>Navigation</title>
-    <style>
-          /* nabar */
-
-        
-        .nav-links {
-            position: relative;
-            display: flex;
-            justify-content: space-between;
-            background-color: #009476;
-            padding: 10px;
-            z-index: 9;
-        }
-
-        .nav-links ul {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-
-        }
-
-        .nav-links ul li {
-            list-style-type: none;
-
-        }
-
-        a {
-            text-decoration: none;
-            font-weight: bold;
-            color: #eeba0bff;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-    
-
-        img.logo {
-            width: 100px;
-        }
-    </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <a href="#">
-                <img src="" alt="">
-            </a>
-        </div>
-        <div class="nav-links">
-            <ul>
-                <li class="link-item"><a href="./html/mission.html">Our Mission</a></li>|
-                <li class="link-item"><a href="./html/events.html">Events</a></li>|
-                <li class="link-item"><a href="./html/rules.html">Rules</a></li>|
-                <li class="link-item"><a href="./html/history.html">Our History</a></li>|
-                <li class="link-item"><a href="./html/about.html">About Us</a></li>|
-                <li class="link-item"><a href="./html/contact.html">Contact Us</a></li>|
-                <li class="link-item"><a href="www.facebook.com">Social</a></li>|
-                <li class="link-item"><a href="www.twitter.com">Social</a></li>
-            </ul>
+    <!-- Navigation -->
+    <nav class="nav-links">
+        <a href="./index.html">
+            <img class="logo" src="./assets/logo-nobg2.png" alt="logo">    
+        </a>
+
+        <ul>
+            <li class="link-item"><a href="./html/mission.html">Our Mission</a></li>|
+            <li class="link-item"><a href="./html/events.html">Events</a></li>|
+            <li class="link-item"><a href="./html/rules.html">Rules</a></li>|
+            <li class="link-item"><a href="./html/history.html">Our History</a></li>|
+            <li class="link-item"><a href="./html/about.html">About Us</a></li>|
+            <li class="link-item"><a href="./html/contact.html">Contact Us</a></li>
+           <!--  <li class="link-item"><a href="www.facebook.com">Social</a></li>|
+            <li class="link-item"><a href="www.twitter.com">Social</a></li> -->
+        </ul>
+        
+        <div class="nav-cta">
+            <a class="hero-cta-button" href="./html/apply.html">Apply</a>
         </div>
     </nav>
 </body>
