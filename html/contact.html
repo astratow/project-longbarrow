@@ -16,6 +16,46 @@ body {
 /*  font-family: "Roboto", sans-serif;*/
 }
 
+		  /* nabar */
+
+        
+        .nav-links {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            background-color: #009476;
+            padding: 10px;
+            z-index: 9;
+        }
+
+        .nav-links ul {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+        }
+
+        .nav-links ul li {
+            list-style-type: none;
+
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #eeba0bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    
+
+        img.logo {
+            width: 100px;
+        }
+
 .form-main {
   /*background: linear-gradient(to bottom, #00000024, #00000024),
     url(https://res.cloudinary.com/dqifboxk5/image/upload/v1686209968/contact-us-2_y8zzx7.jpg)
@@ -26,6 +66,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
   .main-wrapper {
     border-radius: 10px;
     padding: 45px;
@@ -186,7 +228,29 @@ padding: 16px 0 0;
 	</style>
 </head>
 <body>
-	    <div class="form-main">
+
+<!-- Navbar -->
+	<nav class="nav-links">
+        <a href="../index.html">
+        <img class="logo" src="../assets/logo-nobg2.png" alt="logo">    
+    </a>
+        <ul>
+            <li class="link-item"><a href="./mission.html">Our Mission</a></li>|
+            <li class="link-item"><a href="./events.html">Events</a></li>|
+            <li class="link-item"><a href="./rules.html">Rules</a></li>|
+            <li class="link-item"><a href="./history.html">Our History</a></li>|
+            <li class="link-item"><a href="./about.html">About Us</a></li>|
+            <li class="link-item"><a href="./contact.html">Contact Us</a></li>
+           <!--  <li class="link-item"><a href="www.facebook.com">Social</a></li>|
+            <li class="link-item"><a href="www.twitter.com">Social</a></li> -->
+        </ul>
+        
+
+    </nav>
+
+<!-- Navbar end -->
+
+    <div class="form-main">
       <div class="main-wrapper">
         <h2 class="form-head">Contact From</h2>
         <form class="form-wrapper">
@@ -225,11 +289,11 @@ padding: 16px 0 0;
               class="form-textarea"
               maxlength="420"
               rows="3"
-              name="phone_number"
+              name="message"
               required="required"
             ></textarea>
-            <label class="form-textarea-label" for="phone_number"
-              >Address</label
+            <label class="form-textarea-label" for="message"
+              >Message</label
             >
           </div>
           <div class="btn-wrap">

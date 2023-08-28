@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <title>Longbarrow Allotments Website</title>
     <style>
-        .hero-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100vh;
-/*            align-items: flex-end;*/
-            justify-content: flex-end;
-            padding: 60px;
-        }
+        /* nabar */
 
+        
         .nav-links {
+            position: relative;
             display: flex;
+            justify-content: space-between;
+            background-color: rgb(240, 255, 66);
+            padding: 10px;
+            z-index: 9;
         }
 
         .nav-links ul {
             display: flex;
+            align-items: center;
             gap: 5px;
 
         }
@@ -32,32 +31,82 @@
         a {
             text-decoration: none;
             font-weight: bold;
-            color: #eeba0bff;
+            color: rgb(55, 146, 55);
         }
 
         a:hover {
             text-decoration: underline;
         }
 
+    
+
+        img.logo {
+            width: 100px;
+        }
+
+        /*hero section*/
+        .hero-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            height: 100vh;
+/*            align-items: flex-end;*/
+            justify-content: flex-end;
+            margin-top: -97px ;
+            padding: 60px;
+            z-index: -1;
+        }
+
+        .hero-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         a.hero-cta-button {
+            position: relative;
             text-transform: uppercase;
             text-decoration: none;
-            color: #eeba0bff;
-            background-color: #710000ff;
+            color: rgb(240, 255, 66);
+            background-color: rgb(55, 146, 55);
             border-radius: 20px;
             padding: 10px 20px;
             cursor: pointer;
             border: 3px solid transparent;
+            overflow: hidden;
         }
+
+        a.hero-cta-button::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -50%;
+          width: 120%; /* Adjust the width to make the element smaller */
+          height: 100%;
+          background: linear-gradient(to right, rgba(255, 255, 255, 0.4), transparent);
+          filter: blur(13px); /* Apply a slight blur to the gradient */
+          animation: shinyEffect 3s linear infinite;
+        }
+
+        @keyframes shinyEffect {
+          0%{
+            transform: translateX(100%);
+          }
+          100%{
+            transform: translateX(-100%);
+          }
+        }
+        
 
         a.hero-cta-button:hover {
             text-decoration: none;
-            border: 3px solid #eeba0bff;
+            border: 3px solid rgb(240, 255, 66);
         }
 
-        img.logo {
-            width: 50px;
+        h1.hero-text__headline{
+            color: rgb(240, 255, 66);
         }
+
 
     </style>
 </head>
@@ -65,14 +114,16 @@
 
     <!-- Navigation -->
     <nav class="nav-links">
-        <img class="logo" src="./assets/logo.jpeg" alt="logo">    
+        <a href="./index.html">
+        <img class="logo" src="./assets/logo-nobg2.png" alt="logo">    
+    </a>
         <ul>
             <li class="link-item"><a href="./html/mission.html">Our Mission</a></li>|
             <li class="link-item"><a href="./html/events.html">Events</a></li>|
             <li class="link-item"><a href="./html/rules.html">Rules</a></li>|
             <li class="link-item"><a href="./html/history.html">Our History</a></li>|
             <li class="link-item"><a href="./html/about.html">About Us</a></li>|
-            <li class="link-item"><a href="./html/contact.html">Contact Us</a></li>|
+            <li class="link-item"><a href="./html/contact.html">Contact Us</a></li>
            <!--  <li class="link-item"><a href="www.facebook.com">Social</a></li>|
             <li class="link-item"><a href="www.twitter.com">Social</a></li> -->
         </ul>
@@ -81,10 +132,12 @@
     </nav>
     
     <div class="hero">
-        <div class="hero-container" style="background-image: url('https://images.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg');">
-        <h1 class="hero-text">Welcome to Longbarrow Allotments</h1>
-        <a class="hero-cta-button" href="./html/apply.html">Apply</a>
-    </div>
+        <div class="hero-container" style="background-image: url('https://images.pexels.com/photos/17701990/pexels-photo-17701990/free-photo-of-scarecrow-in-the-vegetable-garden.jpeg'); background-repeat: no-repeat; background-size: cover;">
+            <div class="hero-text">
+                <h1 class="hero-text__headline">Welcome to Longbarrow Allotments</h1>
+                <a class="hero-cta-button" href="./html/apply.html">Apply</a>
+            </div>
+        </div>
 
     </div>
 

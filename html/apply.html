@@ -4,6 +4,48 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
+
+		  /* nabar */
+
+        
+        .nav-links {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            background-color: #009476;
+            padding: 10px;
+            z-index: 9;
+        }
+
+        .nav-links ul {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+        }
+
+        .nav-links ul li {
+            list-style-type: none;
+
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #eeba0bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    
+
+        img.logo {
+            width: 100px;
+        }
+
+/*       Application */
 		h2.application-header {
 			font-family: "times new roman", serif;
 			font-weight: 500;
@@ -94,12 +136,31 @@
 	<title>Application</title>
 </head>
 <body>
+
+	<nav class="nav-links">
+        <a href="../index.html">
+        <img class="logo" src="../assets/logo-nobg2.png" alt="logo">    
+    </a>
+        <ul>
+            <li class="link-item"><a href="./html/mission.html">Our Mission</a></li>|
+            <li class="link-item"><a href="./html/events.html">Events</a></li>|
+            <li class="link-item"><a href="./html/rules.html">Rules</a></li>|
+            <li class="link-item"><a href="./html/history.html">Our History</a></li>|
+            <li class="link-item"><a href="./html/about.html">About Us</a></li>|
+            <li class="link-item"><a href="./html/contact.html">Contact Us</a></li>
+           <!--  <li class="link-item"><a href="www.facebook.com">Social</a></li>|
+            <li class="link-item"><a href="www.twitter.com">Social</a></li> -->
+        </ul>
+        
+
+    </nav>
+
 	<h2 class="application-header">Application for tenancy</h2>
-	<div class="address-box">
+	<!-- <div class="address-box">
 		<h3 class="address-box__title">Longbarrow Allotments Association</h2>
 		<h3 class="address-box__subtitle">GARDENS AND SOCIAL CLUB ESTABLISHED 1951</h3>
 		<h3 class="address-box__subtitle">THROOP ROAD<br>BOURNEMOUTH<br>BH8 0DJ</h3>
-	</div>
+	</div> -->
 	<form id="allotmentApplicationForm" class="application-form">
 		<div class="application-form__row">
 		  <label for="fullName">I</label>
