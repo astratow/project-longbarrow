@@ -166,8 +166,7 @@
   value="Application form from %{formName} (%{submissionId}" />
 		<div class="application-form__row">
 		  <label for="fullName">I</label>
-		  <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
-		  <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+		  <input type="text" id="name" name="name" placeholder="Full Name" required>
 		</div>
 		<div class="application-form__row">
 		  <label for="address">of</label>
@@ -188,7 +187,10 @@
 		  <input type="email" id="email" name="email" placeholder="Email Address" required>
 		</div>
 		<div class="application-form__row">
-		  <p>Hereby apply for an allotment at the Longbarrow Allotments. If this application is accepted, I agree to abide by the Rules and Conditions of Tenancy in force at the time.</p>
+		  <p><label>I hereby apply for an allotment at the Longbarrow Allotments. If this application is accepted, I agree to abide by the Rules and Conditions of Tenancy in force at the time.</label>
+		  			  <input type="hidden" name="declaration" >
+		  </p>
+
 		</div>
 		<div class="application-form__row">
 	  		<label for="signature">Signed</label>
