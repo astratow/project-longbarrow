@@ -9,11 +9,13 @@
 
         
         .nav-links {
-            position: relative;
+            position: sticky;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             background-color: #009476;
-            padding: 10px;
+            top: 0;
+            padding: 10px 40px;
             z-index: 9;
         }
 
@@ -47,17 +49,49 @@
         img.logo {
             width: 100px;
         }
+
+        #mobile-menu {
+            display:none;
+        }
+
+        .nav-menu-mobile {
+            display: none; /* Initially hide the mobile menu */
+            background-color: #009476; /* Background color */
+            padding: 10px; /* Padding around menu items */
+            list-style-type: none; /* Remove bullet points from list items */
+            text-align: center; /* Center-align menu items */
+        }
+
+        .nav-menu-mobile li {
+            margin: 10px 0; /* Spacing between menu items */
+        }
+
+        .nav-menu-mobile a {
+            text-decoration: none;
+            color: #eeba0bff; /* Link text color */
+            font-weight: bold;
+            font-size: 18px; /* Font size */
+        }
+
+        .nav-menu-mobile a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        
+
         /*hero section*/
         .hero-container {
             display: flex;
             flex-direction: column;
             align-items: flex-end;
-            height: 100vh;
+            height: calc(100vh - 60px);
             justify-content: flex-end;
-            margin-top: -97px ;
+            margin-top: 0 ;
             padding: 60px;
             z-index: -1;
         }
+
+
 
         .hero-text {
             display: flex;
@@ -107,8 +141,45 @@
 /* CTA Button end */
         h1.hero-text__headline{
             color: rgb(240, 255, 66);
+            text-stroke: 2px #000;
+            -webkit-text-stroke: 2px #000;
+        }
+@media screen and (max-width: 999px) {
+            #mobile-menu {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: center;
+                margin: 0 auto;
+                cursor: pointer;
+            }
+
+            ul.nav-menu-mobile {
+                display:none;
+                margin: 0;
+            }
+
+            nav.nav-menu {
+                flex-wrap: wrap;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                padding: 10px 20px  ;
+            }
+
+            ul.nav-menu {
+                display: none;
+            }
         }
 
+        @media screen and (max-width: 480px) {
+
+            .nav-links {
+                
+                padding: 10px;
+            }
+        }
 
     </style>
 </head>
@@ -117,27 +188,36 @@
     <!-- Navigation -->
     <nav class="nav-links">
         <a href="./index.html">
-        <img class="logo" src="./assets/logo-nobg2.png" alt="logo">    
-    </a>
+            <img class="logo" src="./assets/logo-nobg2.png" alt="logo">    
+        </a>
 
-        <ul>
-            <li class="link-item"><a href="./html/mission.html">Our Mission</a></li>|
-            <li class="link-item"><a href="./html/events.html">Events</a></li>|
-            <li class="link-item"><a href="./html/rules.html">Rules</a></li>|
-            <li class="link-item"><a href="./html/history.html">Our History</a></li>|
-            <li class="link-item"><a href="./html/about.html">About Us</a></li>|
-            <li class="link-item"><a href="./html/contact.html">Contact Us</a></li>
-           <!--  <li class="link-item"><a href="www.facebook.com">Social</a></li>|
-            <li class="link-item"><a href="www.twitter.com">Social</a></li> -->
+        <ul class="nav-menu">
+            <li class="menu-item"><a href="./html/mission.html">Our Mission</a></li>|
+            <li class="menu-item"><a href="./html/events.html">Events</a></li>|
+            <li class="menu-item"><a href="./html/rules.html">Rules</a></li>|
+            <li class="menu-item"><a href="./html/history.html">Our History</a></li>|
+            <li class="menu-item"><a href="./html/about.html">About Us</a></li>|
+            <li class="menu-item"><a href="./html/contact.html">Contact Us</a></li>
+           <!--  <li class="menu-item"><a href="www.facebook.com">Social</a></li>|
+            <li class="menu-item"><a href="www.twitter.com">Social</a></li> -->
         </ul>
-        
-<div class="nav-cta">
-    <a class="hero-cta-button" href="./html/apply.html">Apply</a>
-</div>
-    </nav>
+        <img src="./assets/menu.svg" id="mobile-menu" style="width: 50px; height: 50px;">
+        <div class="nav-cta">
+            <a class="hero-cta-button" href="./html/apply.html">Apply</a>
+        </div>
     
+
+    </nav>
+    <ul class="nav-menu-mobile" id="mobile-menu-list">
+        <li class="menu-item"><a href="./html/mission.html">Our Mission</a></li>
+        <li class="menu-item"><a href="./html/events.html">Events</a></li>
+        <li class="menu-item"><a href="./html/rules.html">Rules</a></li>
+        <li class="menu-item"><a href="./html/history.html">Our History</a></li>
+        <li class="menu-item"><a href="./html/about.html">About Us</a></li>
+        <li class="menu-item"><a href="./html/contact.html">Contact Us</a></li>
+    </ul>
     <div class="hero">
-        <div class="hero-container" style="background-image: url('https://images.pexels.com/photos/17701990/pexels-photo-17701990/free-photo-of-scarecrow-in-the-vegetable-garden.jpeg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="hero-container" style="background-image: url('assets/lady-with-wheelbarrow.jpeg'); background-repeat: no-repeat; background-size: cover;">
             <div class="hero-text">
                 <h1 class="hero-text__headline">Welcome to Longbarrow Allotments</h1>
                 <a class="hero-cta-button" href="./html/apply.html">Apply</a>
@@ -159,5 +239,15 @@
     <div class="contact">Contact Us</div>
 
     <footer class="footer">Footer</footer>
+   <script>
+        // JavaScript to toggle the mobile menu
+        const mobileMenu = document.getElementById("mobile-menu-list");
+        const mobileMenuIcon = document.getElementById("mobile-menu");
+
+        mobileMenuIcon.addEventListener("click", function() {
+            mobileMenu.style.display = mobileMenu.style.display === "flex" ? "none" : "flex";
+        });
+    </script>
+
 </body>
 </html>

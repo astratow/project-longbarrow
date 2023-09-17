@@ -137,6 +137,23 @@
 		.hidden {
 			display: none;
 		}
+
+		@media  screen and (max-width: 999px) {
+			form.application-form {
+			display: flex;
+			flex-direction: column;
+			gap: 4px;
+			font-size: 16px;
+			border-radius: 26px;
+			width: 90%;
+			}
+
+			.application-form__row {
+			    display: flex;
+			    flex-direction: column;
+			    gap: 10px;
+			}
+		}
 	</style>
 	<title>Application</title>
 </head>
