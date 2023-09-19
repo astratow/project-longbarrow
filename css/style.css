@@ -117,6 +117,10 @@ img.logo {
     ul.nav-menu {
         display: none;
     }
+
+    .nav-links ul {
+    	display: none;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -199,3 +203,76 @@ h1.hero-text__headline{
     text-stroke: 2px #000;
     -webkit-text-stroke: 2px #000;
 }
+
+			/*****************/
+			/* about section */
+			/*****************/
+
+.about__grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    text-transform: capitalize;
+    background-color: #f6f6f6;
+}
+
+.about__col-left {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.about__col-right {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+
+					/*********/
+					/* Rules */
+					/*********/
+.custom-ordered-list {
+  list-style-type: none;
+  counter-reset: my-counter;
+}
+
+.custom-ordered-list li {
+  counter-increment: my-counter;
+  position: relative;
+  display: flex;
+  border-radius: 15px;
+  background-color: #f4e409;
+  color: #a63c06ff;;
+  margin-bottom: 5px;
+  padding: 5px 5px 5px 45px;
+
+}
+
+.custom-ordered-list li::before {
+  content: counter(my-counter);
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 20px; /* Adjust the width of the marker */
+  height: 20px; /* Adjust the height of the marker */
+  background-color: #eeba0b; /* Your desired background color */
+  border-radius: 50%; /* Create a circular marker */
+  text-align: center;
+  line-height: 20px; /* Vertically center the marker content */
+  font-weight: bold;
+  color: #009476; /* Marker text color */
+  padding: 3px;
+}
+
+.rules-item {
+  display: flex;
+  border-radius: 15px;
+  background-color: #f4e409;
+  color: #a63c06ff;;
+  margin-bottom: 5px;
+  padding: 5px 5px 5px 45px;
+}
+
