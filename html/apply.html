@@ -5,157 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
  	<link rel="stylesheet" href="../css/style.css">
  	<script src="../js/app.js" defer></script>
-	<style>
 
-		  /* nabar */
-
-        
-        .nav-links {
-            position: relative;
-            display: flex;
-            justify-content: space-between;
-            background-color: #009476;
-            padding: 10px;
-            z-index: 9;
-        }
-
-        .nav-links ul {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-
-        }
-
-        .nav-links ul li {
-            list-style-type: none;
-
-        }
-
-        a {
-            text-decoration: none;
-            font-weight: bold;
-            color: #eeba0bff;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-    
-
-        img.logo {
-            width: 100px;
-        }
-
-/*       Application */
-		h2.application-header {
-			font-family: "times new roman", serif;
-			font-weight: 500;
-			font-size: 32px;
-			text-transform: uppercase;
-			text-decoration: underline;
-		}
-
-		.address-box {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			text-transform: uppercase;
-			text-align: center;
-			border: 2px solid black;
-			width: 70%;
-			margin: 40px auto;
-			padding: 30px;
-		}
-
-		h3.address-box__title {
-			font-size: 32px;
-			font-weight: 500;
-			margin: 20px;
-		}
-
-		h3.address-box__subtitle {
-			font-size: 16px;
-			font-weight: 700;
-			margin: 10px;
-		}
-
-		form.application-form {
-			display: flex;
-			flex-direction: column;
-			gap: 14px;
-			font-size: 26px;
-			font-family: "Charter", sans-serif;
-			background-color:  #f4e409ff;
-			color: #a63c06ff;
-			padding: 20px;
-			border: none;
-			border-radius: 26px;
-			width: 40%;
-			margin: 0 auto;
-		}
-
-		label {
-/*			margin-bottom: 10px;*/
-		}
-
-
-		input {
-			background-color: #eeba0bff;
-			border-color: #c36f09ff;
-			border-radius: 20px;
-			padding: 5px;
-		}
-
-		.application-form__row {
-			display: flex;
-			flex-direction: column;
-/*			align-items: center;*/
-			gap: 20px;
-		}
-
-		button {
-			display: flex;
-			justify-content: center;
-			font-size: 16px;
-			font-weight: 700;
-			color: #eeba0bff;
-			background-color: #710000ff;
-			border:none;
-			border-radius: 12px;
-			width: 100%;
-			padding: 8px;
-			transition: all .9s ease;
-			cursor: pointer;
-		}
-
-		button:hover {
-			background-color: #eeba0bff;
-
-			color: #710000ff;
-			box-shadow: black;
-		}
-		.hidden {
-			display: none;
-		}
-
-		@media  screen and (max-width: 999px) {
-			form.application-form {
-			display: flex;
-			flex-direction: column;
-			gap: 4px;
-			font-size: 16px;
-			border-radius: 26px;
-			width: 90%;
-			}
-
-			.application-form__row {
-			    display: flex;
-			    flex-direction: column;
-			    gap: 10px;
-			}
-		}
-	</style>
 	<title>Application</title>
 </head>
 <body>
@@ -176,12 +26,23 @@
            <!--  <li class="link-item"><a href="www.facebook.com">Social</a></li>|
             <li class="link-item"><a href="www.twitter.com">Social</a></li> -->
         </ul>
-        
+        <img src="../assets/menu.svg" id="mobile-menu" style="width: 50px; height: 50px;">
+
         <div class="nav-cta">
             <a class="hero-cta-button" href="./apply.html">Apply</a>
         </div>
     </nav>
 <!-- Navbar end -->
+<!-- Mobile menu -->
+ <ul class="nav-menu-mobile" id="mobile-menu-list">
+    <li class="menu-item"><a href="./mission.html">Our Mission</a></li>
+    <li class="menu-item"><a href="./events.html">Events</a></li>
+    <li class="menu-item"><a href="./rules.html">Rules</a></li>
+    <li class="menu-item"><a href="./history.html">Our History</a></li>
+    <li class="menu-item"><a href="./about.html">About Us</a></li>
+    <li class="menu-item"><a href="./contact.html">Contact Us</a></li>
+</ul>
+    <!-- Mobile menu end -->
 
 	<h2 class="application-header">Application for tenancy</h2>
 	<!-- <div class="address-box">
