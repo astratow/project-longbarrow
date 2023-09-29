@@ -327,13 +327,14 @@ button:hover {
     align-items: center;
     justify-items: center;
     text-transform: capitalize;
+    padding: 40px;
 /*    background-color: #f6f6f6;*/
 }
 
 .about__col-left {
 	display: flex;
 	flex-direction: column;
-
+    align-self: baseline;
 }
 
 .about__contact {
