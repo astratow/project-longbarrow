@@ -180,7 +180,7 @@ a.hero-cta-button:hover {
 }
 /* CTA Button end */
 
-			#mobile-menu-list**************/
+			
 		
 .hero-container {
 	display: flex;
@@ -327,7 +327,7 @@ button:hover {
     align-items: center;
     justify-items: center;
     text-transform: capitalize;
-    background-color: #f6f6f6;
+/*    background-color: #f6f6f6;*/
 }
 
 .about__col-left {
@@ -336,10 +336,56 @@ button:hover {
 
 }
 
+.about__contact {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.about__contact ul {
+    padding-left: 10px;
+    margin: 0;
+}
+
 .about__col-right {
+    position: relative;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+}
+
+.google-map {
+     padding-bottom: 50%;
+     position: relative;
+     min-width: 70vw;
+}
+
+.google-map iframe {
+     height: 100%;
+     width: 100%;
+     left: 0;
+     top: 0;
+     position: absolute;
+}
+
+@media  screen and (max-width: 999px) {
+    .about__grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .about__contact {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 40px;
+        padding-bottom: 30px;
+    }
+
+    .google-map {
+        min-width: 92vw;
+        padding-bottom: 100%;
+    }
+
 }
 
 
