@@ -210,7 +210,7 @@ a.hero-cta-button:hover {
 	background-image: url(assets/lady-with-wheelbarrow.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: calc(100vh - 60px);
+    min-height: 75vh;
     justify-content: flex-end;
     align-items: flex-end;
     padding: 60px;
