@@ -87,9 +87,11 @@ img.logo {
         flex-direction: column;
         align-items: flex-start;
         height: 100%;
+        opacity: .9;
         text-align: center;
         margin: 0 auto;
         cursor: pointer;
+        z-index: 1;
     }
 
     .show-menu {
@@ -178,9 +180,7 @@ a.hero-cta-button:hover {
 }
 /* CTA Button end */
 
-		/****************/
-		/* hero section */
-		/****************/
+			#mobile-menu-list**************/
 		
 .hero-container {
 	display: flex;
