@@ -220,6 +220,9 @@ a.hero-cta-button:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    background: rgba(255 ,255 ,255 , .2);
+    padding: 5px 10px;
+    border-radius: 28px;
 }
 
 h1.hero-text__headline{
