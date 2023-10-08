@@ -474,3 +474,17 @@ button:hover {
 	}
 }
 
+/**************************/
+/********* Footer *********/
+/**************************/
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: #009476;
+    padding: 20px;
+}
+
+img.monkey-logo {
+    width: 26px;
+}
