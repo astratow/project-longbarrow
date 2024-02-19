@@ -232,6 +232,62 @@ h1.hero-text__headline{
 }
 
 /******************************************************************/
+/************************* Homepage Events  ***********************/
+/******************************************************************/
+.events {
+    background-color: #a4d9f8;
+}
+.events>h2 {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.event{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 66px 0;
+}
+
+.event>h3,
+.event>h4 {
+    margin: 0;
+}
+.event__red-title--large,
+.event__red-title,
+.event__red-title--small
+{
+    color: #e34f1f;
+}
+.event__red-title--large{
+    font-size: 54px;
+    padding-bottom: 66px;
+}
+.event__green-title--large{
+    font-size:80px;
+    color: #006639;
+    padding-bottom: 50px;
+}
+.event__red-title{
+    font-size: 36px;
+}
+.event__times,
+.event__features,
+.event__fun{
+    color: #1f1d1e;
+}
+.event__features{
+
+}
+.event__fun{
+
+}
+.event__red-title--small{
+
+}
+
+/******************************************************************/
 /***************************Application ***************************/
 /******************************************************************/
 
