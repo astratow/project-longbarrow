@@ -291,112 +291,63 @@ h1.hero-text__headline{
 /***************************Application ***************************/
 /******************************************************************/
 
-h2.application-header {
-	font-family: "times new roman", serif;
-	font-weight: 500;
-	font-size: 32px;
-	text-transform: uppercase;
-	text-decoration: underline;
+.application {
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+    height: calc(100vh - 90px);
 }
 
-.address-box {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-transform: uppercase;
-	text-align: center;
-	border: 2px solid black;
-	width: 70%;
-	margin: 40px auto;
-	padding: 30px;
+.application h1 {
+    font-size: 48px;
+    
 }
 
-h3.address-box__title {
-	font-size: 32px;
-	font-weight: 500;
-	margin: 20px;
+.application p {
+    font-family: arial;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+/*************************************************************/
+/************************ newsletter *************************/
+/*************************************************************/
+.newsletter {
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+}
+.newsletter__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: arial, sans-serif;
+    font-size: 24px;
+    margin: 100px auto 60px;
 }
 
-h3.address-box__subtitle {
-	font-size: 16px;
-	font-weight: 700;
-	margin: 10px;
+.newsletter__heading img {
+    max-height: 100px;
+}
+.newsletter__address {
+    text-align: center;
+    font-style: italic;
+    font-weight: 900;
+    border: 2px solid black;
+    padding: 20px 150px;
+}
+.newsletter__body {
+    
 }
 
-form.application-form {
-	display: flex;
-	flex-direction: column;
-	gap: 14px;
-	font-size: 26px;
-	font-family: "Charter", sans-serif;
-	background-color:  #f4e409ff;
-	color: #a63c06ff;
-	padding: 20px;
-	border: none;
-	border-radius: 26px;
-	width: 40%;
-	margin: 0 auto;
+.newsletter__body-main{
+    border: 2px solid black;
+    padding: 20px 40px;
 }
-
-label {
-/*			margin-bottom: 10px;*/
-}
-
-
-input {
-	background-color: #eeba0bff;
-	border-color: #c36f09ff;
-	border-radius: 20px;
-	padding: 5px;
-}
-
-.application-form__row {
-	display: flex;
-	flex-direction: column;
-/*			align-items: center;*/
-	gap: 20px;
-}
-
-button {
-	display: flex;
-	justify-content: center;
-	font-size: 16px;
-	font-weight: 700;
-	color: #eeba0bff;
-	background-color: #710000ff;
-	border:none;
-	border-radius: 12px;
-	width: 100%;
-	padding: 8px;
-	transition: all .9s ease;
-	cursor: pointer;
-}
-
-button:hover {
-	background-color: #eeba0bff;
-
-	color: #710000ff;
-	box-shadow: black;
-}
-.hidden {
-	display: none;
-}
-
-@media  screen and (max-width: 999px) {
-	form.application-form {
-	display: flex;
-	flex-direction: column;
-	gap: 4px;
-	font-size: 16px;
-	border-radius: 26px;
-	width: 90%;
-	}
-
-	.application-form__row {
-	    display: flex;
-	    flex-direction: column;
-	    gap: 10px;
-	}
+.newsletter__body-title{}
+.newsletter__body-subtitle {}
+.newsletter__body-text {
+    font-family: arial;
+    letter-spacing: 1px;
 }
 
 /*************************************************************/
