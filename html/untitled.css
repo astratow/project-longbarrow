@@ -17,7 +17,7 @@
 
 .nav-links, .nav-menu-mobile {
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
 }
 
@@ -50,8 +50,8 @@ a:hover {
 }
 
 .nav-cta {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 img.logo {
@@ -63,8 +63,8 @@ img.logo {
 }
 
 .nav-menu-mobile {
-    position: sticky;
-    top: 90px;
+	position: sticky;
+	top: 90px;
     display: none; /* Initially hide the mobile menu */
     background-color: #009476; /* Background color */
     padding: 10px; /* Padding around menu items */
@@ -89,25 +89,15 @@ img.logo {
 /*******************************************/
 /*************** mobile menu ***************/
 /*******************************************/
-#mobile-menu-list.show {
-    display: none;
-}
-.nav-menu-mobile  {
-    display: none;
-}
 
 @media screen and (max-width: 999px) {
-#mobile-menu-list.show {
-    display: flex;
-}
-
-    #mobile-menu {
-        display: flex;
-        cursor: pointer;
-    }
+	#mobile-menu {
+		display: flex;
+		cursor: pointer;
+	}
 
     #mobile-menu-list {
-        display: none;
+    	display: none;
         flex-direction: column;
         align-items: flex-start;
         height: 100%;
@@ -124,11 +114,11 @@ img.logo {
     }
 
     .show-menu {
-        display: flex;
+    	display: flex;
     }
 
     .nav-menu-mobile ul li {
-        list-style-type: none;
+    	list-style-type: none;
     }
 
     ul.nav-menu-mobile {
@@ -150,7 +140,7 @@ img.logo {
     }
 
     .nav-links ul {
-        display: none;
+    	display: none;
     }
 }
 
@@ -213,11 +203,11 @@ a.hero-cta-button:hover {
 }
 /* CTA Button end */
 
-            
-        
+			
+		
 .hero-container {
-    display: flex;
-    background-image: url(assets/lady-with-wheelbarrow.jpeg);
+	display: flex;
+	background-image: url(assets/lady-with-wheelbarrow.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 75vh;
@@ -245,7 +235,7 @@ h1.hero-text__headline{
 /************************* Homepage Events  ***********************/
 /******************************************************************/
 .events {
-    background-color: #ă4d9f;
+    background-color: #a4d9f8;
 }
 .events>h2 {
     text-align: center;
@@ -326,18 +316,13 @@ h1.hero-text__headline{
     width: 90%;
     margin: 0 auto;
 }
-
-.newsletter h1 {
-    font-family: arial, sans-serif;
-    font-size: ;
-}
 .newsletter__heading {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     font-family: arial, sans-serif;
     font-size: 24px;
-    margin: 60px auto;
+    margin: 100px auto 60px;
 }
 
 .newsletter__heading img {
@@ -365,22 +350,6 @@ h1.hero-text__headline{
     letter-spacing: 1px;
 }
 
-@media screen and (max-width: 999px) {
-    .newsletter__address{
-        padding: 20px 50px;
-    }
-}
-@media screen and (max-width: 767px) {
-    .newsletter__heading {
-        flex-direction: column;
-        gap: 20px;
-        margin: 40px auto;
-    }
-    .newsletter__address{
-        padding: 20px;
-    }
-}
-
 /*************************************************************/
 /*********************** about section ***********************/
 /*************************************************************/
@@ -396,8 +365,8 @@ h1.hero-text__headline{
 }
 
 .about__col-left {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
     align-self: baseline;
 }
 
@@ -414,9 +383,9 @@ h1.hero-text__headline{
 
 .about__col-right {
     position: relative;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .google-map {
@@ -457,11 +426,6 @@ h1.hero-text__headline{
 /*****************************************************/
 /*********************** Rules ***********************/
 /*****************************************************/
-.rules {
-    max-width: 960px;
-    width: 90%;
-    margin: 0 auto;
-}
 .custom-ordered-list {
   list-style-type: none;
   counter-reset: my-counter;
@@ -472,8 +436,8 @@ h1.hero-text__headline{
   position: relative;
   display: flex;
   border-radius: 15px;
-  background-color: #f4ẽ09;
-  color: #ẩc06ff;;
+  background-color: #f4e409;
+  color: #a63c06ff;;
   margin-bottom: 10px;
   padding: 5px 5px 5px 45px;
 
@@ -499,22 +463,22 @@ h1.hero-text__headline{
 .rules-item {
   display: flex;
   border-radius: 15px;
-  background-color: #f4ẽ09;
-  color: #ẩc06ff;;
+  background-color: #f4e409;
+  color: #a63c06ff;;
   margin-bottom: 5px;
   padding: 5px 5px 5px 45px;
 }
 
 @media screen and (max-width:767px) {
-    .custom-ordered-list {
-      padding-inline-start: 20px;
-    }
+	.custom-ordered-list {
+	  padding-inline-start: 20px;
+	}
 }
 
 @media screen and (max-width:480px) {
-    .custom-ordered-list {
-      padding-inline-start: 10px;
-    }
+	.custom-ordered-list {
+	  padding-inline-start: 10px;
+	}
 }
 
 /**************************/
