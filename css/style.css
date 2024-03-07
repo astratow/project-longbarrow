@@ -317,7 +317,6 @@ h1.hero-text__headline{
 }
 .events>h2 {
     text-align: center;
-    font-family: sans-serif;
 }
 
 .event{
@@ -364,6 +363,61 @@ h1.hero-text__headline{
 
 }
 
+@media screen and (max-width: 767px) {
+
+    .event{
+        padding: 66px 0;
+    }
+
+ 
+    .event__red-title--large{
+        font-size: 48px;
+        padding-bottom: 66px;
+    }
+    .event__green-title--large{
+        font-size:56px;
+        color: #006639;
+        padding-bottom: 50px;
+    }
+    .event__red-title{
+        font-size: 32px;
+    }
+    .event__times,
+    .event__features,
+    .event__fun{
+        color: #1f1d1e;
+    }
+    .event__features{
+    
+    }
+    .event__fun{
+    
+    }
+    .event__red-title--small{
+    
+    }
+        
+}
+
+@media screen and (max-width: 480px) {
+
+    .event{
+        padding: 66px 0;
+    }
+
+ 
+    .event__red-title--large{
+        font-size: 36px;
+        padding-bottom: 66px;
+    }
+    .event__green-title--large{
+        font-size:48px;
+        color: #006639;
+        padding-bottom: 50px;
+    }
+    .event__red-title{
+        font-size: 30px;
+    }
 /******************************************************************/
 /***************************Application ***************************/
 /******************************************************************/
