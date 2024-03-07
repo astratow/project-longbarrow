@@ -387,15 +387,7 @@ h1.hero-text__headline{
     .event__fun{
         color: #1f1d1e;
     }
-    .event__features{
     
-    }
-    .event__fun{
-    
-    }
-    .event__red-title--small{
-    
-    }
         
 }
 
@@ -590,8 +582,8 @@ h1.hero-text__headline{
   position: relative;
   display: flex;
   border-radius: 15px;
-  background-color: #f4ẽ09;
-  color: #ẩc06ff;;
+  background-color: #f4e409;
+  color: #a63c06ff;
   margin-bottom: 10px;
   padding: 5px 5px 5px 45px;
 
@@ -617,8 +609,8 @@ h1.hero-text__headline{
 .rules-item {
   display: flex;
   border-radius: 15px;
-  background-color: #f4ẽ09;
-  color: #ẩc06ff;;
+  background-color: #f4e409;
+  color: #a63c06ff;
   margin-bottom: 5px;
   padding: 5px 5px 5px 45px;
 }
@@ -639,7 +631,7 @@ h1.hero-text__headline{
 /********* Footer *********/
 /**************************/
 
-footer {
+footer.footer {
     display: flex;
     align-items: center;
     background-color: #009476;
@@ -648,4 +640,5 @@ footer {
 
 img.monkey-logo {
     width: 26px;
+    height: 26px;
 }
