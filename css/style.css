@@ -1,9 +1,77 @@
 /*style.css*/
 
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap')
 /* navbar styling */
 
-        
+/* Lato classes */
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+/* end of lato classes */
+
+* {
+    font-family: "Lato", sans-serif;
+}
+
+p {
+    font-size: 16px;
+}
 .nav-links {
     position: sticky;
     display: flex;
@@ -104,6 +172,8 @@ img.logo {
     #mobile-menu {
         display: flex;
         cursor: pointer;
+        width: 50px;
+        height: 50px;
     }
 
     #mobile-menu-list {
@@ -157,8 +227,6 @@ img.logo {
 @media screen and (max-width: 480px) {
 
     .nav-links {
-        
-        
         padding: 10px;
     }
 }
@@ -256,7 +324,6 @@ h1.hero-text__headline{
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-family: sans-serif;
     padding: 66px 0;
 }
 
@@ -314,7 +381,6 @@ h1.hero-text__headline{
 }
 
 .application p {
-    font-family: arial;
     letter-spacing: 1px;
     line-height: 1.5;
 }
@@ -328,14 +394,12 @@ h1.hero-text__headline{
 }
 
 .newsletter h1 {
-    font-family: arial, sans-serif;
-    font-size: ;
+    font-size: 48px;
 }
 .newsletter__heading {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    font-family: arial, sans-serif;
     font-size: 24px;
     margin: 60px auto;
 }
@@ -351,7 +415,8 @@ h1.hero-text__headline{
     padding: 20px 150px;
 }
 .newsletter__body {
-    
+    font-size: 20px;
+    line-height: 1.5;
 }
 
 .newsletter__body-main{
@@ -361,7 +426,6 @@ h1.hero-text__headline{
 .newsletter__body-title{}
 .newsletter__body-subtitle {}
 .newsletter__body-text {
-    font-family: arial;
     letter-spacing: 1px;
 }
 
