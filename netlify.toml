@@ -1,1 +1,5 @@
-https://longbarrow.netlify.com/* https://longbarrow.netlify.app/:splat 301
+[[redirects]]
+  from = "https://longbarrow.netlify.com/*"
+  to = "https://longbarrow.netlify.app/:splat"
+  status = 301
+  force = true
