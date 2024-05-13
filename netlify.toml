@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "https://longbarrow.netlify.com/*"
-  to = "https://longbarrow.netlify.app/:splat"
-  status = 301
-  force = true
