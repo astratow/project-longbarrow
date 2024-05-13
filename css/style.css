@@ -1,6 +1,6 @@
 /*style.css*/
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 /* navbar styling */
 
 /* Lato classes */
@@ -165,9 +165,9 @@ img.logo {
 }
 
 @media screen and (max-width: 999px) {
-#mobile-menu-list.show {
-    display: flex;
-}
+    #mobile-menu-list.show {
+        display: flex;
+    }
 
     #mobile-menu {
         display: flex;
@@ -476,7 +476,7 @@ h1.hero-text__headline{
 }
 
 @media screen and (max-width: 999px) {
-    .newsletter__address{
+    .newsletter__address {
         padding: 20px 50px;
     }
 }
@@ -638,7 +638,7 @@ footer.footer {
     padding: 20px;
 }
 
-.monkey-logo {
+img.monkey-logo {
     width: 26px;
     height: 26px;
 }
