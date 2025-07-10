@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav>
+  <a href="/index.html">Home</a>
+  <a href="/html/about/">About</a>
+  <a href="/html/contact/">Contact</a>
+  <a href="/html/events/">Events</a>
+  <a href="/html/mission/">Mission</a>
+  <a href="/html/history/">History</a>
+  <a href="/html/rules/">Rules</a>
+  <a href="/html/apply/">Apply</a>
+  <a href="/html/newsletter-spring-2024/">Newsletter</a>
+</nav> 
+  # Welcome to Longbarrow Allotments
+
+<!-- Usunięto starą nawigację, korzystaj z include w layout.liquid -->
+<div class="hero">
+    <div class="hero-container" style="background-image: url('assets/lady-with-wheelbarrow.jpeg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="hero-text">
+            <h1 class="hero-text__headline">Welcome to Longbarrow Allotments</h1>
+            <a class="hero-cta-button" href="/html/apply/">Apply</a>
+        </div>
+    </div>
+
+</div>
+
+<div class="events">
+
+    <!-- <h2>EVENTS</h2> -->
+    <div class="event">
+        <h3 class="event__red-title--large">LONGBARROW ALLOTMENTS</h3>
+        <h3 class="event__green-title--large">OPEN DAY</h3>
+        <h4 class="event__red-title">SUNDAY 14th JULY </h4>
+        <p class="event__times">11 am - 3pm</p>
+        <p class="event__features">Food and drink | BBQ | Product stalls</p>
+        <p class="event__features">Raffle | Hot drinks | Cakes | Second hand tools</p>
+        <p class="event__features">..and more to be confirmed</p>
+        <p class="event__fun">Lots of fun for everyone!</p>
+        <h4 class="event__red-title--small">ALL ARE WELCOME</h4>
+    </div>
+</div>
+
+  <footer class="footer">
+  Copyright &copy; <span id="year"></span> Design and developed by
+  <a href="https://web-monkey.online" target="_blank">
+    <img class="monkey-logo" src="../assets/monkey-on-web-trans.png" alt="Web Monkey logo">
+  </a>
+</footer>
+<script>
+  // Aktualizuj rok w stopce
+  document.addEventListener('DOMContentLoaded', function() {
+    var yearSpan = document.getElementById('year');
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+  });
+</script> 
+  <script src="/js/app.js"></script>
+</body>
+</html>

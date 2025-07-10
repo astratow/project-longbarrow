@@ -1,0 +1,18 @@
+backend:
+  name: github
+  repo: yourusername/project-longbarrow  # TODO: Change to your GitHub repo
+  branch: master
+
+media_folder: "assets"
+public_folder: "/assets"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "index.html"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Headline", name: "hero_headline", widget: "string" }

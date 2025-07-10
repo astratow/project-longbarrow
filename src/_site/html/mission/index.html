@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mission</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav>
+  <a href="/index.html">Home</a>
+  <a href="/html/about/">About</a>
+  <a href="/html/contact/">Contact</a>
+  <a href="/html/events/">Events</a>
+  <a href="/html/mission/">Mission</a>
+  <a href="/html/history/">History</a>
+  <a href="/html/rules/">Rules</a>
+  <a href="/html/apply/">Apply</a>
+  <a href="/html/newsletter-spring-2024/">Newsletter</a>
+</nav> 
+  <div class="our-mission">
+  <div class="our-mission__col-1">
+    <h2 class="our-mission__headline">Our Mission</h2>
+    <p class="our-mission__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Tristique senectus et netus et malesuada. Urna cursus eget
+      nunc scelerisque viverra. Sed ullamcorper morbi tincidunt ornare massa eget egestas. Iaculis at erat
+      pellentesque adipiscing commodo elit at. Lorem mollis aliquam ut porttitor leo a diam sollicitudin
+      tempor. Lorem ipsum dolor sit amet consectetur adipiscing elit. Varius sit amet mattis vulputate enim
+      nulla aliquet. Urna id volutpat lacus laoreet non curabitur gravida arcu ac. Donec et odio pellentesque
+      diam volutpat commodo sed egestas egestas. Consectetur purus ut faucibus pulvinar elementum integer
+      enimneque. Et malesuada fames ac turpis egestas. Mauris cursus mattis molestie a iaculis at erat. Ornare
+      arcu dui vivamus arcu felis bibendum ut tristique.</p>
+  </div>
+  <div class="our-mission__col-2">
+    <img src="https://images.pexels.com/photos/95215/pexels-photo-95215.jpeg" alt=""
+      class="our-mission__image" />
+  </div>
+</div>
+  <footer class="footer">
+  Copyright &copy; <span id="year"></span> Design and developed by
+  <a href="https://web-monkey.online" target="_blank">
+    <img class="monkey-logo" src="../assets/monkey-on-web-trans.png" alt="Web Monkey logo">
+  </a>
+</footer>
+<script>
+  // Aktualizuj rok w stopce
+  document.addEventListener('DOMContentLoaded', function() {
+    var yearSpan = document.getElementById('year');
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+  });
+</script> 
+  <script src="/js/app.js"></script>
+</body>
+</html>

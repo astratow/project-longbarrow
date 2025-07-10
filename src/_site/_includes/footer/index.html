@@ -1,0 +1,13 @@
+<footer class="footer">
+  Copyright &copy; <span id="year"></span> Design and developed by
+  <a href="https://web-monkey.online" target="_blank">
+    <img class="monkey-logo" src="../assets/monkey-on-web-trans.png" alt="Web Monkey logo">
+  </a>
+</footer>
+<script>
+  // Aktualizuj rok w stopce
+  document.addEventListener('DOMContentLoaded', function() {
+    var yearSpan = document.getElementById('year');
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+  });
+</script> 
