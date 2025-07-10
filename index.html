@@ -89,7 +89,7 @@
         <h4 class="event__red-title">SUNDAY 14th JULY </h4>
         <p class="event__times">11 am - 3pm</p>
         <p class="event__features">Food and drink | BBQ | Product stalls</p>
-        <p class="event__featrues">Raffle | Hot drinks | Cakes | Second hand tools</p>
+        <p class="event__features">Raffle | Hot drinks | Cakes | Second hand tools</p>
         <p class="event__features">..and more to be confirmed</p>
         <p class="event__fun">Lots of fun for everyone!</p>
         <h4 class="event__red-title--small">ALL ARE WELCOME</h4>
@@ -97,7 +97,10 @@
 </div>
 
 <footer class="footer">Copyright &copy; <span id="year"></span> Design and developed by <a href="https://web-monkey.online" target="_blank"><img class="monkey-logo" src="./assets/monkey-on-web-trans.png"></a></footer> 
-
+<script>
+let year = new Date().getFullYear();
+document.querySelector('#year').innerText = year;
+</script>
 
 </body>
 </html>
